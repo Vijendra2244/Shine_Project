@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Download.module.css"
+import styles from "./Donwload.module.css"
 
 function Download() {
   return (

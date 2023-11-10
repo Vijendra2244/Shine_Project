@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { CiMobile4 } from "react-icons/ci";
 import { FaRegUser } from "react-icons/fa";
 import { BiPhoneCall } from "react-icons/bi";
-import styles from "./Header.module.css";
-import Download from "./Download";
+import styles from "./Headers.module.css";
+import Download from "./Download/Download";
 import Employe from "./Employe/Employe";
 import Help from "./Help/Help";
 
-function Header() {
+function Headers() {
   const [isContentIsVisible, setIsContentIsVisible] = useState(false);
   const [isEmployeIsVisible, setIsEmployeIsVisible] = useState(false);
   const [isHelp, setIsHelp] = useState(false);
@@ -59,11 +59,11 @@ function Header() {
           </div>
         </div>
       </div>
-      {isContentIsVisible && <Download />}
+      {isContentIsVisible && <Download/>}
       {isEmployeIsVisible && <Employe />}
       {isHelp && <Help />}
     </>
   );
 }
 
-export default Header;
+export default Headers;
